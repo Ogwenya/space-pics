@@ -29,7 +29,6 @@ class POTD extends Component {
                 <div id="output" className="center">{this.state.picExplanation}</div>
                 <div id="picture" className="center">
                     <img className="img-1" src={this.state.pictureSrc} alt="" />
-                    <iframe width="500" height="315" src={this.state.pictureSrc} title=""></iframe>
                 </div>
             </div>
         )
