@@ -20,23 +20,30 @@ class POTD extends Component {
             })
     }
     render() {
-
-        if(this.state.picExplanation !== ''){
+        console.log(this.state.pictureSrc);
+        let ifPic = this.state.pictureSrc.slice(-3);
+        let pic = 'png' || 'PNG' || 'jpg' || 'JPG'
+        console.log(ifPic);
+        if(ifPic == pic){
             return (
             <div className="container">
-                <h3 id="main-title" className="center">NASA PICTURE OF THE DAY</h3>
-                <h4 className="center">{this.state.title}</h4>
+                <h4 id="main-title" className="center">NASA PICTURE OF THE DAY</h4>
+                <h5 className="center">{this.state.title}</h5>
                 <div id="output" className="center">{this.state.picExplanation}</div>
                 <div id="picture" className="center">
-                    <img className="img-1" src={this.state.pictureSrc} alt="" />
+                    <img id="img" src={this.state.pictureSrc} alt="" />
                 </div>
             </div>
         )
         }else{
-            return(
+            return (
                 <div className="container">
-                    <h3 id="main-title" className="center">NASA PICTURE OF THE DAY</h3>
-                    <LoadingSvg />
+                    <h4 id="main-title" className="center">NASA PICTURE OF THE DAY</h4>
+                    <h5 className="center">{this.state.title}</h5>
+                    <div id="output" className="center">{this.state.picExplanation}</div>
+                    <div id="picture" className="center">
+                        <iframe className="img-1" src={this.state.pictureSrc} frameBorder="0" allow="autoplay; encrypted-media" title={this.state.title} allowfullscreen></iframe>
+                    </div>
                 </div>
             )
         }
