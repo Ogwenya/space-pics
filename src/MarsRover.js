@@ -22,7 +22,7 @@ class MarsRover extends Component {
                 return(
                     <div className="center" id="img-container" key={picture.id}>
                     <figure>
-                        <img id="img" src={picture.img_src} alt="" />
+                        <img id="img" src={picture.img_src} loading="lazy" alt="" />
                         <figcaption>
                             <p className="center">{picture.camera.full_name}</p>
                         </figcaption>
