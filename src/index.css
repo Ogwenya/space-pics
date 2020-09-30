@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background: #f4f4f4;
+  background: blue;/*#f4f4f4;*/
   font-family: 'Noto Serif', serif;
   color: #555;
   -webkit-font-smoothing: antialiased;
