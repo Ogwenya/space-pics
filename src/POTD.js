@@ -24,7 +24,7 @@ class POTD extends Component {
         if(this.state.picExplanation !== ''){
             return (
             <div className="container">
-                <h3 id="main-title" className="center">NASA PICTURE OF THE DAY</h3>
+                <h4 id="main-title" className="center">NASA PICTURE OF THE DAY</h4>
                 <h5 className="center">{this.state.title}</h5>
                 <div id="output" className="center">{this.state.picExplanation}</div>
                 <div id="picture" className="center">

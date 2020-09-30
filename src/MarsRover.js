@@ -36,7 +36,7 @@ class MarsRover extends Component {
         
         return (
             <div>
-                <h4 className="center" id="title">Bringing you a collection of photos of mars from the curiosity rover</h4>
+                <h5 className="center" id="title">Bringing you a collection of photos of mars from the curiosity rover</h5>
                 {pic}
             </div>
         )
