@@ -33,7 +33,7 @@ class MarsRover extends Component {
         ) : (
             <LoadingSvg />
         )
-        
+    
         return (
             <div>
                 <h5 className="center" id="title">Bringing you a collection of photos of mars from the curiosity rover</h5>

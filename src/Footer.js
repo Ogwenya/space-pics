@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <div>
                 <footer className="center">
-                    <h6>allright reserved &copy; <span id="year">{year}</span></h6>
+                    <h6>Ogwenya &copy; <span id="year">{year}</span></h6>
                 </footer>
             </div>
         )
