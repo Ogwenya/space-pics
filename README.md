@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## space-pics
 
 This project uses the NASA API to render a collection of space pictures taken by NASA.
