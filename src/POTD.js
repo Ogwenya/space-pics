@@ -10,7 +10,8 @@ class POTD extends Component {
     }
 
     componentDidMount(){
-        axios.get('https://api.nasa.gov/planetary/apod?api_key=wwBojpG0RgiLelsd8JqkaOhu3SVuQHruB21BOMfb')
+        let API_KEY = ''  //use your api key
+        axios.get(API_KEY)
             .then((res) => {
                 this.setState({
                     pictureSrc: res.data.url,

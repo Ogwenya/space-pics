@@ -7,7 +7,8 @@ class MarsRover extends Component {
         pictures: []
     }
     componentDidMount(){
-        axios.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=VHyEHQdHVsM7DSm446QvcVInCbGphBJnYCbveK9S')
+        let API_KEY = ''  //use your api key
+        axios.get(API_KEY)
             .then((res) => {
                     this.setState({
                         pictures: res.data.photos.slice(0, 200)
